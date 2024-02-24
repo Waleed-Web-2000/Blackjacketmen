@@ -16,7 +16,7 @@ import axios from 'https://cdn.jsdelivr.net/npm/axios@1.3.5/+esm'
 Function FetchData() {
 	const [data, setData] = useState([])
 	useEffect(()=>{
-		axios.get('https://onlineseller.pk/wp-json/wc/v3/')
+		axios.get('https://onlineseller.pk/wp-json/wc/v3/products')
 		.then(res => console.log(res))
 		.catch(err => console.log(err));
 	}, [])
