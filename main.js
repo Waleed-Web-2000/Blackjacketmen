@@ -11,15 +11,7 @@ const instance = axios.create({
 });
 
 instance.get('products')
-  .then(resp => {
-    const data = resp.products;
-    let rows = '';
-    data.foreach(products => {
-      row += `<tr><td>${product.id}</td><td>${product.title}</td><td>${product.description}</td></tr>`
-    })
-    document.getElementById('table_body').innerHTML = rows;
-  })
-  .catch(error => console.log(error))
+  .then((resp) => console.log(resp.data))
 
 // const api = new WooCommerceRestApi({
 //   url: "https://onlineseller.pk/",
