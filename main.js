@@ -13,7 +13,13 @@ const instance = axios.create({
 
 instance.get('products')
   .then((resp) => console.log(resp.data))
-
+const cors = require('cors');
+const corsOptions ={
+    origin:'https://blackjacketmen.vercel.app/', 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200
+}
+app.use(cors(corsOptions));
 // const api = new WooCommerceRestApi({
 //   url: "https://onlineseller.pk/",
 //   consumerKey: "ck_de634d9199442a71813a2fbbda902cd05d907c12",
