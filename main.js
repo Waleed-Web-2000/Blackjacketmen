@@ -1,6 +1,5 @@
 // import WooCommerceRestApi from "@woocommerce/woocommerce-rest-api";
 import axios from 'https://cdn.jsdelivr.net/npm/axios@1.3.5/+esm'
-import cors from "cors";
 const instance = axios.create({
   baseURL: 'https://onlineseller.pk/wp-json/wc/v3/',
   // timeout: 1000,
@@ -13,13 +12,7 @@ const instance = axios.create({
 
 instance.get('products')
   .then((resp) => console.log(resp.data))
-const cors = require('cors');
-const corsOptions ={
-    origin:'https://onlineseller.pk/wp-json/wc/v3/', 
-    credentials:true,            //access-control-allow-credentials:true
-    optionSuccessStatus:200
-}
-app.use(cors(corsOptions));
+
 // const api = new WooCommerceRestApi({
 //   url: "https://onlineseller.pk/",
 //   consumerKey: "ck_de634d9199442a71813a2fbbda902cd05d907c12",
