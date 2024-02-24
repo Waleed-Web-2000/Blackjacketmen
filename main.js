@@ -14,7 +14,7 @@ instance.get('products')
   .then(resp => {
     const data = resp.products;
     let rows = '';
-    data.foreach(product => {
+    data.foreach(products => {
       row += `<tr><td>${product.id}</td><td>${product.title}</td><td>${product.description}</td></tr>`
     })
     document.getElementById('table_body').innerHTML = rows;
