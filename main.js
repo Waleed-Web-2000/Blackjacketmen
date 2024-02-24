@@ -1,7 +1,7 @@
 // import WooCommerceRestApi from "@woocommerce/woocommerce-rest-api";
 import axios from 'https://cdn.jsdelivr.net/npm/axios@1.3.5/+esm'
 const instance = axios.create({
-  baseURL: 'https://onlineseller.pk/wp-json/wc/v3/products',
+  baseURL: 'https://onlineseller.pk/wp-json/wc/v3/',
   // timeout: 1000,
   withCredentials: true,
   auth: {
