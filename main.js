@@ -11,16 +11,11 @@ withCredentials: true,
 });
 
 instance.get('products')
-{ .then((resp) => console.log(resp.data)) 
-	return (
-			<div className='container'>
-			<div className='mt-3'>
-				<h3>FetchData</h3>
-			</div>
-			</div>
-		)
-}
-
+  .then((resp) => console.log(resp.data)) 
+	{
+  	data.map((user, index) => {
+  		return <tr key={index}> <td>{user.id}</td><td>{user.name}</td> </tr>
+  	})
 
 // const api = new WooCommerceRestApi({
 //   url: "https://onlineseller.pk/",
