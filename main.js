@@ -12,11 +12,7 @@ withCredentials: true,
 
 instance.get('products')
   .then((resp) => console.log(resp.data)) 
-	{
-  	data.map((user, index) => {
-  		 <tr key={index}> <td>{user.id}</td> <td>{user.name}</td> </tr>
-  	})
-  }
+	
 
 // const api = new WooCommerceRestApi({
 //   url: "https://onlineseller.pk/",
