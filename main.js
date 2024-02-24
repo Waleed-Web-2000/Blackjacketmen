@@ -11,7 +11,7 @@ withCredentials: true,
 });
 
 instance.get('products')
- .then((resp) => console.log(resp.data)) 
+{ .then((resp) => console.log(resp.data)) 
 	return (
 			<div className='container'>
 			<div className='mt-3'>
