@@ -15,7 +15,7 @@ instance.get('products')
   .then((resp) => console.log(resp.data))
 const cors = require('cors');
 const corsOptions ={
-    origin:'https://blackjacketmen.vercel.app/', 
+    origin:'https://onlineseller.pk/wp-json/wc/v3/', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
