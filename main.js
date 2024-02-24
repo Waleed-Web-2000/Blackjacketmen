@@ -12,14 +12,6 @@ withCredentials: true,
 
 instance.get('products')
  .then((resp) => console.log(resp.data)) 
-
-Function FetchData() {
-	const [data, setData] = useState([])
-	useEffect(()=>{
-		axios.get('https://onlineseller.pk/wp-json/wc/v3/products')
-		.then(res => console.log(res))
-		.catch(err => console.log(err));
-	}, [])
 	return (
 			<div className='container'>
 			<div className='mt-3'>
