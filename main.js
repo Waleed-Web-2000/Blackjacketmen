@@ -9,9 +9,10 @@
    password: "cs_c2d3192a37386e6d91c05b57975ef6351da65ced"
  }
 });
-
+instance.get('products')
+  .then((resp) => console.log(resp.data)) 
  const getTodoList = () => {
-	 	axios.get(`{$BASE_URL}/products?_limit=5`).then((apiResponse) => {
+	 	axios.get(`${BASE_URL}/products?_limit=5`).then((apiResponse) => {
 	 		console.log(apiResponse);
 	 	const {data} = apiResponse;
 	 	const ulElement = document.querySelector('ul');
