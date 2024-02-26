@@ -1,7 +1,7 @@
 
 
  const instance = axios.create({
- baseURL: 'http://leatherjackt.com/wp-json/wc/v3/',
+ baseURL: 'https://leatherjackt.com/wp-json/wc/v3/',
   // timeout: 1000,
   // withCredentials: true,
   auth: {
