@@ -10,7 +10,6 @@
  }
 });
 
-instance.get('products')
 
  const getTodoList = () => {
 	 	axios.get(`{$BASE_URL}/products?_limit=5`).then((apiResponse) => {
