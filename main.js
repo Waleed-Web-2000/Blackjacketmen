@@ -10,8 +10,10 @@
  }
 });
 
+instance.get('products')
+  .then((resp) => console.log(resp.data)) 
 
- const getTodoList = () => {
+ const getTodoList = (resp.data) => {
 	 	axios.get(`{$BASE_URL}/products?_limit=5`).then((apiResponse) => {
 	 		console.log(apiResponse);
 	 	const {data} = apiResponse;
