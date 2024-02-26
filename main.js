@@ -1,7 +1,7 @@
 
 
  const instance = axios.create({
- baseURL: 'https://onlineseller.pk/wp-json/wc/v3/',
+ baseURL: 'https://onlineseller.pk/wp-json/wc/v3/products',
   // timeout: 1000,
 withCredentials: true,
   auth: {
