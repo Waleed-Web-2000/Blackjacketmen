@@ -1,4 +1,16 @@
-const BASE_URL = 'https://onlineseller.pk/wp-json/wc/v3/';
+
+import axios from 'https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js'
+ const instance = axios.create({
+ baseURL: 'https://onlineseller.pk/wp-json/wc/v3/',
+  // timeout: 1000,
+withCredentials: true,
+  auth: {
+   username: "ck_de634d9199442a71813a2fbbda902cd05d907c12",
+   password: "cs_c2d3192a37386e6d91c05b57975ef6351da65ced"
+ }
+});
+
+instance.get('products')
 
  const getTodoList = () => {
 	 	axios.get(`{$BASE_URL}/products?_limit=5`).then((apiResponse) => {
