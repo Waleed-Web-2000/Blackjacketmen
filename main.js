@@ -1,30 +1,15 @@
-// import WooCommerceRestApi from "@woocommerce/woocommerce-rest-api";
+const BASE_URL = 'https://onlineseller.pk/wp-json/wc/v3/';
 
- const instance = axios.create({
- baseURL: 'https://onlineseller.pk/wp-json/wc/v3/',
-  // timeout: 1000,
-withCredentials: true,
-  auth: {
-   username: "ck_de634d9199442a71813a2fbbda902cd05d907c12",
-   password: "cs_c2d3192a37386e6d91c05b57975ef6351da65ced"
- }
-});
+ const getTodoList = () => {
+	 	axios.get(`{$BASE_URL}/products?_limit=5`).then((apiResponse) => {
+	 		console.log(apiResponse);
+	 	const {data} = apiResponse;
+	 	const ulElement = document.querySelector('ul');
 
-instance.get('products')
-  .then((resp) => console.log(resp.data)) 
-	
-
-// const api = new WooCommerceRestApi({
-//   url: "https://onlineseller.pk/",
-//   consumerKey: "ck_de634d9199442a71813a2fbbda902cd05d907c12",
-//   consumerSecret: "cs_c2d3192a37386e6d91c05b57975ef6351da65ced",
-//   version: "wc/v3"
-// });
-
-// api.get("products")
-//   .then((response) => {
-//     console.log(response.data);
-//   })
-//   .catch((error) => {
-//     console.log(error.response.data);
-//   });
+	 	data.forEach((singleTodo) => {
+	 		const liElement = document.createElement('li');
+	 		liElement.innerText = singleTodo.id;
+	 		ulElement.append(liElement);
+	 	})	
+ 	});
+ };
