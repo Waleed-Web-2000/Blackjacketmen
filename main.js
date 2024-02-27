@@ -1,5 +1,5 @@
 // import WooCommerceRestApi from "@woocommerce/woocommerce-rest-api";
-import axios from 'axios'
+import axios from 'https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js'
 
 const instance = axios.create({
   baseURL: 'https://leatherjackt.com/wp-json/wc/v3/',
