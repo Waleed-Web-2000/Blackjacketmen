@@ -22,15 +22,7 @@ instance.get('products')
     document.getElementById('table_body').innerHTML = rows;
   })
   .catch(error => console.log(error))
-    .then(resp => {
-    const data = resp.products;
-    let rows = '';
-    data.foreach(product => {
-      row += `<tr><td>${product.id}</td><td>${product.title}</td><td>${product.description}</td></tr>`
-    })
-    document.getElementById('table_body').innerHTML = rows;
-  })
-  .catch(error => console.log(error))  
+    
 // const api = new WooCommerceRestApi({
 //   url: "https://onlineseller.pk/",
 //   consumerKey: "ck_de634d9199442a71813a2fbbda902cd05d907c12",
