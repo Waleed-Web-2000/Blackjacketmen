@@ -22,7 +22,7 @@ instance.get('products')
     document.getElementById('table_body').innerHTML = rows;
   })
   .catch(error => console.log(error))
-  .then((resp) => console.log(data))
+  .then((resp) => console.log(resp.products))
     .then(resp => {
     const data = resp.products;
     let rows = '';
