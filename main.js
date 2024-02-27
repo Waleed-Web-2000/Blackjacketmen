@@ -1,4 +1,4 @@
-<script>
+
 		fetch("https://black-leather-jacket-mens.leatherjackt.com/response.json").then((data) => {
 				return data.json();
 		}).then((objectData) => {
