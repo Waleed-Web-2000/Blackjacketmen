@@ -4,7 +4,7 @@ import axios from 'axios'
 const instance = axios.create({
   baseURL: 'https://leatherjackt.com/wp-json/wc/v3/',
   // timeout: 1000,
-  withCredentials: true
+  withCredentials: true,
 
   auth: {
     username: "ck_3af00de51b90e9a3315e7e39d75197b534d11a53",
