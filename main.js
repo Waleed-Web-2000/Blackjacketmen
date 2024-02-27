@@ -8,7 +8,8 @@ const instance = axios.create({
 
   auth: {
     username: "ck_3af00de51b90e9a3315e7e39d75197b534d11a53",
-    password: "cs_abb30dcb605f6ce1e322e2260bca513ea051c563"
+    password: "cs_abb30dcb605f6ce1e322e2260bca513ea051c563",
+    version: "wc/v3"
   }
 });
 
