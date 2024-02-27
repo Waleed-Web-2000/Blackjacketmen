@@ -5,7 +5,8 @@
 				console.log(objectData[0].title);
 				let tableData="";
 				objectData.map((values) => {
-				  tableData+=`<tr><td>${values.id}</td><td>${values.name}</td><td>${values.price}</td><td>${JSON.stringifyvalues.images}</td></tr>`;
+				  tableData+=`<tr><td>${values.id}</td><td>${values.name}</td><td>${values.price}</td><td>${values.images}</td></tr>`;
+				  alert(JSON.stringify(values.images));
 				});
 				document.getElementById("table_body").innerHTML=tableData;
 		})
