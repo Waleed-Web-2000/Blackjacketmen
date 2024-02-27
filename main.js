@@ -2,7 +2,7 @@
 import axios from 'https://cdn.jsdelivr.net/npm/axios@1.6.7/+esm'
 
 const instance = axios.create({
-  baseURL: 'https://leatherjackt.com/wp-json/wc/v3',
+  baseURL: 'https://leatherjackt.com/wp-json/wc/v3/products?ck_ea853d043ca67deb15d428c4e0cf7c2943ad73c3=cs_cdae84249427cf419931fef312d1597f32010f21',
   // timeout: 1000,
   withCredentials: true,
 
