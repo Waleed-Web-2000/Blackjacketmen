@@ -3,7 +3,7 @@ fetch("https://black-leather-jacket-mens.leatherjackt.com/response.json")
 		.then(res => {
 				const data = res.products;
 				let rows = '';
-				data.foreach(product => {
+				data.forEach(product => {
 						rows += `<tr><td>${product.id}</td><td>${product.name}</td><td>${product.description}</td></tr>`
 				})
 				document.getElementById(`tableRows`).innerHTML = rows;
