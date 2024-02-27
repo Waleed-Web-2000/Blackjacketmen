@@ -5,7 +5,7 @@
 				console.log(objectData[0].title);
 				let tableData="";
 				objectData.map((values) => {
-				  tableData+=`<tr><td>${values.id}</td><td>${values.name}</td><td>${values.price}</td><td><img src="${values.images}"/></td></tr>`;
+				  tableData+=`<tr><td>${values.id}</td><td>${values.name}</td><td>${values.price}</td><td><img src="${values.images}"/></td><td><img src="${values.permalink}"/></td></tr>`;
 				});
 				document.getElementById("table_body").innerHTML=tableData;
 		})
